@@ -1,0 +1,61 @@
+[
+    {
+        "label": "App",
+        "importPath": "kivy.app",
+        "description": "kivy.app",
+        "isExtraImport": true,
+        "detail": "kivy.app",
+        "documentation": {}
+    },
+    {
+        "label": "Widget;",
+        "importPath": "kivy.uix.widget",
+        "description": "kivy.uix.widget",
+        "isExtraImport": true,
+        "detail": "kivy.uix.widget",
+        "documentation": {}
+    },
+    {
+        "label": "Button;",
+        "importPath": "kivy.uix.button",
+        "description": "kivy.uix.button",
+        "isExtraImport": true,
+        "detail": "kivy.uix.button",
+        "documentation": {}
+    },
+    {
+        "label": "BoxLayout;",
+        "importPath": "kivy.uix.boxlayout",
+        "description": "kivy.uix.boxlayout",
+        "isExtraImport": true,
+        "detail": "kivy.uix.boxlayout",
+        "documentation": {}
+    },
+    {
+        "label": "BoxLayoutExample",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class BoxLayoutExample(BoxLayout):\n    pass;\n    # def __init__(self, **kwargs):\n    #     super().__init__(**kwargs)\n    #     b1 = Button(text='B1');\n    #     b2 = Button(text='B1');\n    #     self.add_widget(b1);\n    #     self.add_widget(b2);\nclass MainWidget(Widget):\n    pass;",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "MainWidget",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class MainWidget(Widget):\n    pass;\nclass TheLabApp(App):\n    pass;\nTheLabApp().run();",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "TheLabApp",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class TheLabApp(App):\n    pass;\nTheLabApp().run();",
+        "detail": "main",
+        "documentation": {}
+    }
+]
