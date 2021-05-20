@@ -1,25 +1,21 @@
-BoxLayoutExample:
-<BoxLayoutExample>:
+LayoutExample:
+<LayoutExample>:
+    cols: 3
+    ToggleButton:
+        text: "OFF"
+        on_state: root.on_toggle_button_click(self)
+        size_hint: None,1
+        width: "100dp"
     Button:
-        text: "Hello"
-        pos_hint: {'y': .25}
-        size_hint: .5,.5
-        color: 1,0,0,0.5
-
-    Button:
-        text: "Hello1"
-        pos: "250dp","250dp"
+        text: "Count"
+        on_press: root.on_button_click()
+        disabled: not root.isEnable
+    Label:
+        text: root.text
         size: "200dp", "200dp"
-    BoxLayout:
-        orientation: "vertical"
-        Button:
-            text: "Hello1"
-            pos: "250dp","250dp"
-            size: "200dp", "200dp"
-        Button:
-            text: "Hello2"
-            pos: "250dp","250dp"
-            size: "200dp", "200dp"
+        font_size: "70dp"
+        color: 1,0,0,1
+        font_name: "Font/ds_digital/DS-DIGII.TTF"
 
 <MainWidget>:
     Button:

@@ -1,0 +1,85 @@
+[
+    {
+        "label": "App",
+        "importPath": "kivy.app",
+        "description": "kivy.app",
+        "isExtraImport": true,
+        "detail": "kivy.app",
+        "documentation": {}
+    },
+    {
+        "label": "StringProperty",
+        "importPath": "kivy.properties",
+        "description": "kivy.properties",
+        "isExtraImport": true,
+        "detail": "kivy.properties",
+        "documentation": {}
+    },
+    {
+        "label": "BooleanProperty",
+        "importPath": "kivy.properties",
+        "description": "kivy.properties",
+        "isExtraImport": true,
+        "detail": "kivy.properties",
+        "documentation": {}
+    },
+    {
+        "label": "Widget;",
+        "importPath": "kivy.uix.widget",
+        "description": "kivy.uix.widget",
+        "isExtraImport": true,
+        "detail": "kivy.uix.widget",
+        "documentation": {}
+    },
+    {
+        "label": "Button;",
+        "importPath": "kivy.uix.button",
+        "description": "kivy.uix.button",
+        "isExtraImport": true,
+        "detail": "kivy.uix.button",
+        "documentation": {}
+    },
+    {
+        "label": "BoxLayout;",
+        "importPath": "kivy.uix.boxlayout",
+        "description": "kivy.uix.boxlayout",
+        "isExtraImport": true,
+        "detail": "kivy.uix.boxlayout",
+        "documentation": {}
+    },
+    {
+        "label": "GridLayout;",
+        "importPath": "kivy.uix.gridlayout",
+        "description": "kivy.uix.gridlayout",
+        "isExtraImport": true,
+        "detail": "kivy.uix.gridlayout",
+        "documentation": {}
+    },
+    {
+        "label": "LayoutExample",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class LayoutExample(GridLayout):\n    # pass;\n    isEnable = BooleanProperty(False);\n    text = StringProperty(\"0\");\n    def on_button_click(self):\n        if(self.isEnable):\n            self.text = str(int(self.text)+1);\n    def on_toggle_button_click(self,widget):\n        if(widget.state == \"normal\"):\n            widget.text = \"OFF\";",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "MainWidget",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class MainWidget(Widget):\n    pass;\nclass TheLabApp(App):\n    pass;\nTheLabApp().run();",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "TheLabApp",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class TheLabApp(App):\n    pass;\nTheLabApp().run();",
+        "detail": "main",
+        "documentation": {}
+    }
+]
