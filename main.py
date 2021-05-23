@@ -2,11 +2,12 @@ from kivy.app import App
 from kivy.properties import StringProperty,BooleanProperty
 from kivy.uix.widget import Widget;
 from kivy.uix.button import Button;
-from kivy.uix.boxlayout import BoxLayout;
-from kivy.uix.gridlayout import GridLayout;
-from kivy.uix.screenmanager import ScreenManager,Screen
+from kivy.uix.screenmanager import ScreenManager,Screen;
 
 class LayoutScreen(Screen):
+    pass;
+
+class WidgetScreen(Screen):
     isEnable = BooleanProperty(False);
     isSliderDisable = BooleanProperty(True);
     text = StringProperty("0");
@@ -32,8 +33,9 @@ class MenuScreen(Screen):
 class TheLabApp(App):
     def build(self):
         screenManager = ScreenManager();
-        screenManager.add_widget(MenuScreen(name='menu'));
+        screenManager.add_widget(MenuScreen(name='MenuScreen'));
         screenManager.add_widget(LayoutScreen(name='LayoutScreen'));
+        screenManager.add_widget(WidgetScreen(name='WidgetScreen'));
         return screenManager;
 
 if __name__ == '__main__':
