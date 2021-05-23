@@ -1,24 +1,46 @@
-LayoutExample:
-<LayoutExample>:
-    cols: 3
-    ToggleButton:
-        text: "OFF"
-        on_state: root.on_toggle_button_click(self)
-        size_hint: None,1
-        width: "100dp"
-    Button:
-        text: "Count"
-        on_press: root.on_button_click()
-        disabled: not root.isEnable
-    Label:
-        text: root.text
-        size: "200dp", "200dp"
-        font_size: "70dp"
-        color: 1,0,0,1
-        font_name: "Font/ds_digital/DS-DIGII.TTF"
+<MenuScreen>:
+    GridLayout:
+        cols: 3
+        Button:
+            text: "Layout"
+            on_press:
+                root.manager.transition.direction = 'left'
+                root.manager.current = 'LayoutScreen'
+<LayoutScreen>:
+    GridLayout:
+        cols: 3
+        ToggleButton:
+            text: "OFF"
+            on_state: root.on_toggle_button_click(self)
+            size_hint: None,1
+            width: "100dp"
+        Button:
+            text: "Count"
+            on_press: root.on_button_click()
+            disabled: not root.isEnable
+        Label:
+            text: root.text
+            font_size: "70dp"
+            color: 1,0,0,1
+            font_name: "Font/ds_digital/DS-DIGII.TTF"
+        Switch:
+            id: isSliderDisable
+            on_active: root.on_switch_active(self)
+            size_hint: None,1
+            width: "100dp"
+        Slider:
+            id: sliderValue
+            min: 0
+            max: 100
+            value: 50
+            disabled: not isSliderDisable.active
+        Label:
+            text: str(int(sliderValue.value))
+            font_size: "70dp"
+            color: 1,0,0,1
+            font_name: "Font/ds_digital/DS-DIGII.TTF"
+        TextInput:
+            size_hint: None,1
+            width: "100dp"
 
-<MainWidget>:
-    Button:
-        text: "Hello1"
-        pos: "250dp","250dp"
-        size: "200dp", "200dp"
+
