@@ -1,0 +1,51 @@
+<LayoutScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        rows:3
+        BoxLayout:
+            size_hint: 0.1,0.1
+            Button:
+                text: "Back To Menu"
+                font_size: "10dp"
+                on_press:
+                    root.manager.transition.direction = 'right'
+                    root.manager.current = 'MenuScreen'
+        BoxLayout:
+            cols:3
+            size_hint: 1,0.1
+            Button:
+                text: "BoxLayout"
+                on_press:
+                    root.manager.transition.direction = 'right'
+                    root.manager.current = 'MenuScreen'
+            Button:
+                text: "AnchorLayout"
+                on_press:
+                    root.manager.transition.direction = 'right'
+                    root.manager.current = 'MenuScreen'
+            Button:
+                text: "GridLayout"
+                on_press:
+                    root.manager.transition.direction = 'right'
+                    root.manager.current = 'MenuScreen'
+            Button:
+                text: "StackLayout"
+                on_press:
+                    root.manager.transition.direction = 'right'
+                    root.manager.current = 'MenuScreen'
+            Button:
+                text: "ScrollLayout"
+                on_press:
+                    root.manager.transition.direction = 'right'
+                    root.manager.current = 'MenuScreen'
+            Button:
+                text: "PageLayout"
+                on_press:
+                    root.manager.transition.direction = 'right'
+                    root.manager.current = 'MenuScreen'
+            Button:
+                text: "Widget"
+                on_press:
+                    root.manager.transition.direction = 'right'
+                    root.manager.current = 'MenuScreen'
+        BoxLayout:

@@ -11,65 +11,16 @@
             on_press:
                 root.manager.transition.direction = 'left'
                 root.manager.current = 'WidgetScreen'
-<LayoutScreen>:
+
+<WidgetScreen>:
     BoxLayout:
         orientation: 'vertical'
-        rows:3
+        rows:2
         BoxLayout:
             size_hint: 0.1,0.1
             Button:
                 text: "Back To Menu"
                 font_size: "10dp"
-                on_press:
-                    root.manager.transition.direction = 'right'
-                    root.manager.current = 'MenuScreen'
-        BoxLayout:
-            cols:3
-            size_hint: 1,0.1
-            Button:
-                text: "BoxLayout"
-                on_press:
-                    root.manager.transition.direction = 'right'
-                    root.manager.current = 'MenuScreen'
-            Button:
-                text: "AnchorLayout"
-                on_press:
-                    root.manager.transition.direction = 'right'
-                    root.manager.current = 'MenuScreen'
-            Button:
-                text: "GridLayout"
-                on_press:
-                    root.manager.transition.direction = 'right'
-                    root.manager.current = 'MenuScreen'
-            Button:
-                text: "StackLayout"
-                on_press:
-                    root.manager.transition.direction = 'right'
-                    root.manager.current = 'MenuScreen'
-            Button:
-                text: "ScrollLayout"
-                on_press:
-                    root.manager.transition.direction = 'right'
-                    root.manager.current = 'MenuScreen'
-            Button:
-                text: "PageLayout"
-                on_press:
-                    root.manager.transition.direction = 'right'
-                    root.manager.current = 'MenuScreen'
-            Button:
-                text: "Widget"
-                on_press:
-                    root.manager.transition.direction = 'right'
-                    root.manager.current = 'MenuScreen'
-        BoxLayout:
-<WidgetScreen>:
-    BoxLayout:
-        orientation: 'vertical'
-        GridLayout:
-            cols: 2
-            Button:
-                text: "Back To Menu"
-                size_hint: 0.1,0.1
                 on_press:
                     root.manager.transition.direction = 'right'
                     root.manager.current = 'MenuScreen'
@@ -108,3 +59,5 @@
             TextInput:
                 size_hint: None,1
                 width: "100dp"
+            ProgressBar:
+                value: int(sliderValue.value)
